@@ -8,18 +8,17 @@
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 
+
 \title{Analys i flera variabler}
 
 \author{Alexandr Djadkin}
-
-\date{\today}
 \begin{document}
 \maketitle
 
 
 
 
-\section{Kap 6 Dubbelintegraler}
+\section*{Kapitel 6 - Dubbelintegraler}
 
 \begin{dfn}
 
@@ -34,24 +33,60 @@ Om $f$ är integrerbar över $\Delta$ så finns precis ett tal $\lambda$ med ege
 \end{thm}
 
 
-\subsection{Specialfall}
+\subsection*{Specialfall}
 
 \begin{equation}
-\iint_\Delta g(x)h(x )\,dx \,dy = \left(\int_{a}^{b} g(x) dx\right)\left(\int_{a}^{b} h(y) dy\right)
+\iint_\Delta g(x)h(x)\,dx \,dy = \left(\int_{a}^{b} g(x) dx\right)\left(\int_{a}^{b} h(y) dy\right)
 \end{equation} 
 
-\subsection{Monotonitetsegenskapen}
+\subsection*{Monotonitetsegenskapen}
 
 
 $\Phi \leq \Psi $ på $ \Delta \Rightarrow \iint_\Delta \Phi \,dx \,dy \leq \iint_\Delta \Psi \,dx \,dy\
 $
 
-\subsection{6.4 Variabelbyte i dubbelintegraler}
+\subsection*{6.4 Variabelbyte i dubbelintegraler}
 
 \textbf{Formeln för variabelsubstitution i enkelintegral}
+\\[2mm]
+Om $ x = g(t) $ är $ \int_{a}^{b} f(x) dx = \pm \int_{\alpha}^{\beta} f(g(t))g'(t)dt $, där tecknet beror på om g är växande eller avtagande.
+\\[2mm]
 
-Om $ x = g(t) $ är $ \int_{a}^{b} f(x) dx = \pm \int_{\alpha}^{\beta} f(g(t))g'(t)dt $
-, där tecknet beror på om g är växande eller avtagande.
+\begin{thm}
+Låt \\
+
+ $\begin{cases} 
+    x = g(u,v) \\
+    y = h(u,v)
+  \end{cases}  $
+  \\
+  
+  vara en bijektiv $C^1$ avbildning av ett öppet begränsat kvadrerbart område E i $uv$-planet på ett motsvarande område D i $xy$-planet, sådan att \\
+   $J(u,v) = \dfrac{d(x,y)}{d(u,v)} \neq 0 $ i E. \\
+ 
+    Då är
+    \begin{equation}
+    \iint_D f(x,y)\,dx \,dy = \iint_D f(g(u,v),h(u,v))|J(u,v)|\,du \,dv,
+    \end{equation}
+  
+  om funktionerna under integraltecknen är integrerbara över respektive område.
+  
+
+
+
+
+\end{thm}
+
+\subsection*{6.5 Integration med hjälp av nivåkurvor}
+
+\textbf{Beräkningsformel för integration med hjälp av nivåkurva:}
+
+\begin{equation}
+\iint_D h(g(x,y)) \,dx \,dy = \int_a^b h(u)A'(u) du
+\end{equation}
+
+\subsection*{6.6 Generaliserade dubbelintegraler}
+
 
 
 \end{document}
