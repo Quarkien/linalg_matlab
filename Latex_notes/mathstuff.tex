@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{thm}{Sats}
+\newtheorem{dfn}{Definition}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Analys i flera variabler}
+
+\author{Alexandr Djadkin}
+
+\date{\today}
+\begin{document}
+\maketitle
+
+
+
+
+\section{Kap 6 Dubbelintegraler}
+
+\begin{dfn}
+
+Den begränsade funktionen $f(x,y)$ är \textbf{(Riemann)integrerbar} över rektangeln $\Delta$ om det till varje tal $\epsilon > 0$ finns trappfunktioner $\Phi$ och $\Psi$ sådana att $\Phi \leq f \leq \Psi$ och $\iint_\Delta \Phi \,dx \,dy - \iint_\Delta \Psi \,dx \,dy < \epsilon$
+
+\end{dfn}
+
+
+\begin{thm}
+Om $f$ är integrerbar över $\Delta$ så finns precis ett tal $\lambda$ med egenskapen att  $\iint_\Delta \Phi\,dx\,dy \leq \lambda \leq \iint_\Delta \Psi\,dx\,dy$  för alla trappfunktioner $\Phi$ och $\Psi$ med $\Phi \leq f \leq \Psi$.
+
+\end{thm}
+
+
+\subsection{Specialfall}
+
+\begin{equation}
+\iint_\Delta g(x)h(x )\,dx \,dy = \left(\int_{a}^{b} g(x) dx\right)\left(\int_{a}^{b} h(y) dy\right)
+\end{equation} 
+
+\subsection{Monotonitetsegenskapen}
+
+
+$\Phi \leq \Psi $ på $ \Delta \Rightarrow \iint_\Delta \Phi \,dx \,dy \leq \iint_\Delta \Psi \,dx \,dy\
+$
+
+\subsection{6.4 Variabelbyte i dubbelintegraler}
+
+\textbf{Formeln för variabelsubstitution i enkelintegral}
+
+Om $ x = g(t) $ är $ \int_{a}^{b} f(x) dx = \pm \int_{\alpha}^{\beta} f(g(t))g'(t)dt $
+, där tecknet beror på om g är växande eller avtagande.
+
+
+\end{document}

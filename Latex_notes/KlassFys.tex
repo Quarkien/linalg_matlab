@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{thm}{Sats}
+\newtheorem{dfn}{Definition}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Klassisk Fysik}
+
+\author{Alexandr Djadkin}
+
+\date{\today}
+\begin{document}
+\maketitle
+
+
+
+
+\section{Kap 23.5 Potential gradienten}
+
+Om det elektriska fältet $\vec{E}$ är känt som en funktion av positionen kan potentialen V räknas ut med  \\[2mm]
+
+$V_a - V_b = \int_{a}^{b} \vec{E} d\vec{l} = \int_{a}^{b} Ecos\phi dl$. 
+\\[2mm]
+Om V är känd som funktion av positionen kan $\vec{E}$ räknas ut med 
+\\[2mm]
+
+$ E_x = -\dfrac{\partial V}{\partial x}, \qquad E_x = -\dfrac{\partial V}{\partial y}, \qquad E_x = -\dfrac{\partial V}{\partial z}$
+\\[2mm]
+Radiellt elektriskt fält med avseende på en punkt eller axel, med r som avstånd:
+
+$ E_r = -\dfrac{\partial V}{\partial r}$
+
+\section{Kap 24.4 Dielektrika}
+
+Kapacitans: $ C = \dfrac{Q}{V}=\epsilon_0\dfrac{A}{d}$ , där $Q$ är laddning, $V$ är potential, $A$ är plattornas ytarea och $d$ är avstånden mellan plattorna. $\epsilon_0 = 8,85*10^{-12} F/m$
+\\[2mm]
+Dielektriskt konstant: $K = \dfrac{C}{C_0}$, med $C_0$ som kapacitansen i vakuum. Potentialen och det elektriska fältet minskar med en faktor $K$, samtidigt som kapacitansen ökar med en faktor $K$
+\\[2mm]
+Potential: $V = \dfrac{V_0}{K}$, med $V_0$ som potentialen i vakuum.
+\\[2mm]
+Elektriskt fält mellan plattorna: $E = \dfrac{E_0}{K}$ (när $Q$ är konstant)
+\\[1mm]
+Fältet mellan plattorna beror på netto ytladdningsdensiteten: 
+$E=\sigma_{net}/\epsilon_0$
+\\[1mm]
+Med dielektrika: $E = \dfrac{\sigma - \sigma_i}{\epsilon_0}$, där $\sigma_i$ är på dielektrikan inducerad laddning per areaenhet.
+\newpage
+
+\section{Kap 25 Ström, Resistans och Elektromotorisk Kraft}
+
+\subsection{Kap 25.1 Ström}
+
+Definitionen av ström: $I = \dfrac{dQ}{dt}$ (genom en tvärsnittsarea)
+\\[4mm]
+
+\textbf{Drifthastighet och strömtäthet}
+
+Ström genom en area: $I = \dfrac{dQ}{dt} = n\vert q \vert v_dA$, där $n$ är koncentrationen av laddade partiklar i rörelse, $q$ är laddning per partikel, $v_d$ är drifthastigheten och $A$ är tvärsnittsarean.
+\\[2mm]
+
+Strömtäthet: $J = \dfrac{I}{A} = n\vert q \vert v_d$, som också kan skrivas i vektorform där drifthastigheten ger riktningen (inget absolutbelopp i vektorekvationen). Om laddningen är positiv är drifthastigheten riktad åt samma håll som det elektriska fältet. Omvänt för negativ laddning. $\vec{J}$ är riktad i det elektriska fältets riktning.
+
+Strömtäthet som vektor: $\vec{J} =  nq\vec{v_d}$
+
+
+
+
+
+
+
+
+
+\end{document}
