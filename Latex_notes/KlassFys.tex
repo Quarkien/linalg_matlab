@@ -1,0 +1,300 @@
+
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{thm}{Sats}
+\newtheorem{dfn}{Definition}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Klassisk Fysik}
+
+\author{Alexandr Djadkin}
+\begin{document}
+\maketitle
+
+
+
+
+\section*{23.5 Potential gradienten}
+
+Om det elektriska fältet $\vec{E}$ är känt som en funktion av positionen kan potentialen V räknas ut med  
+\\[2mm]
+\begin{equation}
+V_a - V_b = \int_{a}^{b} \vec{E} d\vec{l} = \int_{a}^{b} Ecos\phi dl
+\end{equation}
+\\[2mm]
+Om V är känd som funktion av positionen kan $\vec{E}$ räknas ut med 
+\\[2mm]
+\begin{equation}
+E_x = -\dfrac{\partial V}{\partial x}, \qquad E_x = -\dfrac{\partial V}{\partial y}, \qquad E_x = -\dfrac{\partial V}{\partial} z
+\end{equation}
+\\[2mm]
+Radiellt elektriskt fält med avseende på en punkt eller axel, med r som avstånd:
+\begin{equation}
+E_r = -\dfrac{\partial V}{\partial r}
+\end{equation}
+
+
+\section*{24.4 Dielektrika}
+
+Kapacitans: \begin{equation}
+C = \dfrac{Q}{V}=\epsilon_0\dfrac{A}{d},
+\end{equation} där $Q$ är laddning, $V$ är potential, $A$ är plattornas ytarea och $d$ är avstånden mellan plattorna. $\epsilon_0 = 8,85*10^{-12} F/m$
+\\[2mm]
+Dielektriskt konstant: $K = \dfrac{C}{C_0}$, med $C_0$ som kapacitansen i vakuum. Potentialen och det elektriska fältet minskar med en faktor $K$, samtidigt som kapacitansen ökar med en faktor $K$
+\\[2mm]
+Potential: $V = \dfrac{V_0}{K}$, med $V_0$ som potentialen i vakuum.
+\\[2mm]
+Elektriskt fält mellan plattorna: $E = \dfrac{E_0}{K}$ (när $Q$ är konstant)
+\\[1mm]
+Fältet mellan plattorna beror på netto ytladdningsdensiteten: 
+$E=\sigma_{net}/\epsilon_0$
+\\[1mm]
+Med dielektrika: $E = \dfrac{\sigma - \sigma_i}{\epsilon_0}$, där $\sigma_i$ är på dielektrikan inducerad laddning per areaenhet.
+\newpage
+
+\section*{25 Ström, Resistans och Elektromotorisk Kraft}
+
+\subsection*{25.1 Ström}
+
+Definitionen av ström: $I = \dfrac{dQ}{dt}$ (genom en tvärsnittsarea)
+\\[4mm]
+
+\textbf{Drifthastighet och strömtäthet}
+
+Ström genom en area: $I = \dfrac{dQ}{dt} = n\vert q \vert v_dA$, där $n$ är koncentrationen av laddade partiklar i rörelse, $q$ är laddning per partikel, $v_d$ är drifthastigheten och $A$ är tvärsnittsarean.
+\\[2mm]
+
+Strömtäthet: $J = \dfrac{I}{A} = n\vert q \vert v_d$, som också kan skrivas i vektorform där drifthastigheten ger riktningen (inget absolutbelopp i vektorekvationen). Om laddningen är positiv är drifthastigheten riktad åt samma håll som det elektriska fältet. Omvänt för negativ laddning. $\vec{J}$ är riktad i det elektriska fältets riktning.
+\\
+Strömtäthet som vektor: $\vec{J} =  nq\vec{v_d}$
+
+\subsection*{25.2 Resistivitet}
+
+\begin{equation}
+\rho = \dfrac{E}{J}, 
+\end{equation}
+där E och J är beloppen av det elektriska fältet respektive strömtätheten.
+
+\subsection*{Resistivitet och Temperatur}
+\begin{equation}
+\rho(T) = \rho_0[1 + \alpha(T - T_0)],
+\end{equation}
+där $\rho_0$ är resistiviteten vid en referenstemperatur $T_0$.
+
+\subsection*{25.3 Resistans}
+
+En ledares resistans:
+
+\begin{equation}
+R = \dfrac{\rho L}{A},
+\end{equation}
+där L är ledarens längd och A är tvärsnittsarea.
+\\
+
+\textbf{Ohms Lag}
+
+\begin{equation}
+V = IR
+\end{equation}
+
+\textbf{Resistans och temperatur}
+
+\begin{equation}
+R(T) = R_0[1 + \alpha(T - T_0)]
+\end{equation}
+\newpage
+
+
+\subsection*{Elektromotorisk kraft och kretsar}
+\begin{equation}
+V_{ab} =  \mathcal{E} \quad \text{(ideal emf-källa)}
+\end{equation}
+
+
+\begin{equation}
+\mathcal{E} = V_{ab} = IR \quad \text{(ideal emf-källa)}
+\end{equation}
+
+\subsection*{Inre Resistans}
+\begin{equation}
+V_{ab} = \mathcal{E} - Ir, \quad \text{där r är källans inre resistans.}
+\end{equation}
+
+\subsection*{25.5 Energi och effekt i elektriska kretsar}
+
+\textbf{Effekt till eller från en komponent i kretsen}
+\begin{equation}
+P=V_{ab}I
+\end{equation}
+
+\textbf{Effekt levererad till en resistor}
+\begin{equation}
+P = V_{ab}I = I^2R = \dfrac{V_{ab}^2}{R}
+\end{equation}
+
+\textbf{Output av effekt}
+\begin{equation}
+P = V_{ab}I = \mathcal{E}I - I^2r
+\end{equation}
+
+Differansen $\mathcal{E}I - I^2r$ är netto ouput av elektrisk kraft från en källa.
+
+\subsection*{25.6 Teorin om metallisk ledning}
+\textbf{Resistivitet hos metall}
+\begin{equation}
+\rho = \dfrac{m}{ne^2\tau}, 
+\end{equation}
+där n är antalet fria elektroner per volym, e elektronladdningen, m elektronmassan och $\tau$ den genomsnittliga tiden mellan kollisioner.
+
+\section*{26 likström och kretsar}
+
+\subsection*{26.1 Resistorer i serie och parallelt}
+\textbf{Resistorer i serie}
+\begin{equation}
+R_{eq} = R_1 + R_2 + R_3 + ...
+\end{equation}
+\textbf{Parallella resistorer}
+\begin{equation}
+\dfrac{1}{R_{eq}} = \dfrac{1}{R_{1}} + \dfrac{1}{R_{2}} + \dfrac{1}{R_{3}} + ... 
+\end{equation}
+\textbf{Specialfallet med två parallella resistorer}
+\begin{equation}
+R_{eq} = \frac{R_1R_2}{R_1+R_2}
+\end{equation}
+
+\begin{equation}
+\dfrac{I_1}{I_2} = \dfrac{R_2}{R_1}
+\end{equation}
+
+\subsection*{26.2 Kirchhoff's lagar}
+\textbf{Kirchhoff's regel om knutpunkt}
+\begin{equation}
+\sum V= 0
+\end{equation}
+Summan av alla strömmar in till en knutpunkt är 0.
+\newline
+
+\textbf{Kirchhoff's regel om loop}
+\begin{equation}
+\sum I = 0
+\end{equation}
+Summan av alla potentialskillnader i någon loop är 0.
+
+\subsection*{26.3 Elektriska mätinstrument}
+\textbf{Amperemeter}
+
+En amperemeter kan anpassas till at mäta strömmar som är större än dess fullskaliga avläsning genom att koppla en resistor
+(shuntmotstånd, $R_{sh}$)
+parallellt med den så att en del av strömmen kringgår mätarspolen.
+
+Antag att vi vill göra en mätare med fullskalig ström $I_{fs}$, vars spoles resistans är $R_c$ till en amperemätare med fullskalig avläsning $I_a$. $I_a$ är total ström genom parallellkopplingen, strömmen genom mätarens spole är $I_{fs}$ och strömmen genom shunten är differensen $I_a - I_{fs}$. Potentiallskillnaden $V_{ab}$ är samma för båda vägarna, så
+\begin{equation}
+I_{fs}R_c = (I_a - I_{fs})R_{sh} \quad \text{(för en amperemätare)}
+\end{equation}
+
+\textbf{Voltmätare}
+
+För en voltmätare med fullskalig avläsning $V_V$ behövs en resistor i serie $R_s$ så att
+\begin{equation}
+V_V = I_{fs}(R_c + R_s) \quad \text{(för en voltmätare)}
+\end{equation}
+
+\subsection*{26.4 R-C Kretsar}
+
+\textbf{Laddning av kondensator}
+\begin{equation}
+q = C \mathcal{E}(1-e^{-t/RC}) = Q_f(1-e^{-t/RC})
+\end{equation}
+q är kondensatorns laddning, C kapacitansen, $\mathcal{E}$ batteriets EMK, t tiden sedan brytaren stängts, R resistansen $Q_f$ är den slutliga laddningen hos kondensatorn (= $C\mathcal{E}$)
+\\
+
+Momentanströmmen är tidsderivatan av (25):
+\begin{equation}
+i = \dfrac{dq}{dt} = \dfrac{\mathcal{E}}{R} e^{-t/RC} = I_0 e^{-t/RC}
+\end{equation}
+
+$\dfrac{dq}{dt}$ är laddningens förändringshastighet och $I_0$ är initialströmmen. ($=\mathcal{E}/R$)
+
+\newpage
+\textbf{Tidskonstant}
+
+Tidskonstanten är ett mått på hur snabbt en kondensator laddas. För litet värde på $\tau$ är laddningen snabb, för större värden tar laddningen längre tid.
+\begin{equation}
+\tau = RC
+\end{equation}
+\\
+\textbf{Urladdning av kondensator}
+\begin{equation}
+q = Q_0e^{-t/RC}
+\end{equation}
+
+Momentanströmmen:
+\begin{equation}
+i = \dfrac{dq}{dt} = - \dfrac{Q_0}{RC} e^{-t/RC} = I_0 e^{-t/RC}
+\end{equation}
+
+\section*{27 Magnetiskt fält och magnetisk kraft}
+\subsection*{27.2 Magnetiskt fält}
+
+\textbf{Magetisk kraft på en laddad partikel i rörelse}
+\begin{equation}
+\vec{F} = q \vec{v} \times \vec{B} \quad \text{(Riktning ges av högerhandsregeln)}
+\end{equation}
+
+Kraftens storlek (belopp):
+
+\begin{equation}
+F = |q|vB_{\bot} = |q|vBsin\Phi \quad \text{($\Phi$ är vinkeln mellan $\vec{v}$ och $\vec{B}$)}
+\end{equation}
+Enhet för B: 1 tesla = 1 T = 1 $N/Am$. \\ 1 gauss = 1 G = $10^{-4}$ T.
+
+\subsection*{27.3 Magnetiska fältlinjer och magnetiskt flöde}
+\textbf{Magnetiskt flöde genom yta}
+\begin{equation}
+\Phi_B = \int B cos \Phi dA = \int B_\bot dA = \int \vec{B} * d \vec{A},
+\end{equation}
+där B är beloppet av det magnetiska fältet $\vec{B}$ och  $\Phi$ vinkeln mellan $\vec{B}$ och normalen till ytan.  \\[2 mm]
+Enhet för $\Phi_B$: 1 weber = 1 wb = 1 $T*m^2$ = 1 $Nm/A$ 
+\\
+
+\textbf{Gauss's lag för magnetism}
+
+Det totala magnetiska flödet genom någon sluten yta 
+\begin{equation}
+\oint \vec{B}*d \vec{A} = 0 \qquad \text{... är lika med 0.}
+\end{equation}
+
+\subsection*{27.4 Laddade partiklars rörelse i magnetiska fält}
+\textbf{Radien för cirkulär bana i magnetiskt fält}
+\begin{equation}
+R = \dfrac{mv}{|q|B}
+\end{equation}
+
+\textbf{Vinkelhastighet}
+\begin{equation}
+\omega = \dfrac{v}{R} = v \dfrac{|q|B}{mv} = \dfrac{|q|B}{m}
+\end{equation}
+
+\subsection*{27.5 Tillämpningar av laddade partiklars rörelse}
+...
+
+\subsection*{27.6 Magnetisk kraft på en strömförande ledare}
+\textbf{Magnetisk kraft på ett rakt trådsegment}
+\begin{equation}
+\vec{F} = I \vec{l} \times \vec{B}
+\end{equation}
+
+\textbf{Magnetisk kraft på ett infinitesimalt trådsegment}
+\begin{equation}
+d \vec{F} = I d \vec{l} \times \vec{B}
+\end{equation}
+
+\subsection*{27.7 Kraft och vridmoment på en strömloop}
+
+
+
+\end{document}
